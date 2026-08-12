@@ -3,6 +3,14 @@
     <channel>
         <title>Ferry</title>
         <item>
+            <title>1.0.1</title>
+            <pubDate>Wed, 12 Aug 2026 09:48:48 +0800</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/ZigaoWang/ferry-releases/releases/download/v1.0.1/Ferry-1.0.1.zip" length="3620791" type="application/octet-stream" sparkle:edSignature="ArdCJmemKZ7ZNbqFRRYpZpI5RvzLhslqRXfeNC4ZUeGZecP0t9pbOqoT/QUXIQVYxI6uruir/cYaW2WmfRDjDw=="/>
+        </item>
+        <item>
             <title>1.0.0</title>
             <pubDate>Wed, 12 Aug 2026 09:42:31 +0800</pubDate>
             <sparkle:version>1</sparkle:version>
