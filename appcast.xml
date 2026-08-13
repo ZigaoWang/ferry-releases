@@ -3,6 +3,69 @@
     <channel>
         <title>Ferry</title>
         <item>
+            <title>2.0.0</title>
+            <pubDate>Thu, 13 Aug 2026 18:36:03 +0800</pubDate>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>2.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h3>It compresses the files it used to give up on</h3>
+<p>
+    Ferry could only ever offer a file it had made itself — decode, re-encode, and if that
+    came out bigger than what you dropped in, hand back your original and call it already
+    good. It never asked the cheaper question: is this file carrying weight that isn't
+    picture? Usually it is.
+</p>
+<p>
+    It now optimizes the file you gave it as well, losslessly, and weighs that against
+    everything else. Screenshots that used to produce nothing now save 30&ndash;90%.
+</p>
+
+<h3>Two new formats, chosen per image</h3>
+<p>
+    Ferry writes AVIF, WebP, JPEG and PNG, and picks by writing the candidates and measuring
+    them rather than by guessing from the file type. WebP fills the gap that used to trap
+    screenshots between a lossy codec that smeared the text and a PNG several megabytes wide:
+    one 9&nbsp;MB screenshot that came out at 6&nbsp;MB now leaves at 106&nbsp;kB.
+</p>
+<p>
+    JPEG picked up mozjpeg's optimizer, which rebuilds the coding tables for each image and
+    writes progressively. About 9% smaller, with the decoded pixels identical.
+</p>
+
+<h3>Quality is measured, not set</h3>
+<p>
+    A quality number can't know how hard a picture is to encode, so it overshoots badly on
+    anything easy. Ferry now searches for the smallest encode that still clears its own
+    fidelity bar, per image. On a document scan that meant 38% smaller with the text
+    indistinguishable side by side.
+</p>
+<p>
+    Across a corpus of photographs: <strong>88% average saving</strong> on Smallest, 78% on
+    Works everywhere, and nothing refused on either.
+</p>
+
+<h3>Advanced, for when you know what you need</h3>
+<p>
+    A third mode beside Smallest and Anywhere. Pin the format, or lossy against lossless, or
+    both — useful when a pipeline or a client will only take one thing. Everything left on
+    Auto is still decided by measuring; pinning narrows what Ferry may write, it doesn't
+    switch the judgement off. When a pin forces something softer than Ferry would have picked,
+    it says so.
+</p>
+
+<h3>Smaller things</h3>
+<p>
+    Photographs shot on a phone are no longer misread as graphics, which used to leave a 24MP
+    photo re-encoded at full size and beaten by its own original. The result screen leads with
+    what happened rather than with a size increase when a conversion grew. Files that came out
+    of a camera now say when their colors were converted to sRGB. The menu bar no longer
+    spells out "Compressing" beside the boat. And an unlicensed copy no longer shows a blue
+    verified badge next to the words "Not licensed".
+</p>
+]]></description>
+            <enclosure url="https://github.com/ZigaoWang/ferry-releases/releases/download/v2.0.0/Ferry-2.0.0.zip" length="4337593" type="application/octet-stream" sparkle:edSignature="MScRGzeKatdw/DgR6HTSeqtYc6jZS3qP+XKuQXDEm9Mahc+iW63rFmuoYw1hSG/Kn5FhADKo+DK9388BuzWDAA=="/>
+        </item>
+        <item>
             <title>1.1.0</title>
             <pubDate>Thu, 13 Aug 2026 11:04:36 +0800</pubDate>
             <sparkle:version>5</sparkle:version>
@@ -61,14 +124,6 @@
             <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
             <enclosure url="https://github.com/ZigaoWang/ferry-releases/releases/download/v1.0.3/Ferry-1.0.3.zip" length="3652778" type="application/octet-stream" sparkle:edSignature="eqSWwGas1zzcdq+iPuqf6wiuTG0teN/oBarmzR8276tGpg3GvGn23Usk36IfTD7okkM6U4g8wBBFLAsVa4mjDQ=="/>
-        </item>
-        <item>
-            <title>1.0.2</title>
-            <pubDate>Wed, 12 Aug 2026 11:59:12 +0800</pubDate>
-            <sparkle:version>3</sparkle:version>
-            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/ZigaoWang/ferry-releases/releases/download/v1.0.2/Ferry-1.0.2.zip" length="3620445" type="application/octet-stream" sparkle:edSignature="seTOFrzePoXgfTciYg5uuLhuWDQF3IOC4P+DzNSxiZoDdENhtrl5SqggcP//sb7IpknzSuCOhhruuhC1HrtUBA=="/>
         </item>
     </channel>
 </rss>
