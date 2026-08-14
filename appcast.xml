@@ -3,6 +3,72 @@
     <channel>
         <title>Ferry</title>
         <item>
+            <title>2.1.0</title>
+            <pubDate>Fri, 14 Aug 2026 21:58:06 +0800</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>2.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h3>Paste an image straight in</h3>
+<p>
+    Copy a picture anywhere &mdash; a browser, Preview, a screenshot you just took &mdash; and
+    press &#8984;V. Ferry writes it out and compresses it without you finding somewhere to save
+    it first.
+</p>
+
+<h3>Settings, rebuilt</h3>
+<p>
+    It had grown to thirteen controls in one long pane, so reaching a sound toggle meant
+    scrolling past the whole of image handling. Three tabs now &mdash; General, Images and About
+    &mdash; and the rows line up, which they had quietly stopped doing.
+</p>
+<p>
+    Two different controls were both called Quality and meant different things. The one in
+    Advanced is Compression, because what it decides is whether anything may be discarded at
+    all.
+</p>
+
+<h3>A person to write to</h3>
+<p>
+    Ferry is made by one person, and now says so from inside the app. The Help menu and the new
+    About tab both carry the website, the privacy policy, the terms, and an email that reaches
+    me &mdash; for a bug, for something you want added, or to say hello.
+</p>
+
+<h3>The menu bar tells the truth</h3>
+<p>
+    Its Format section listed two modes and left Advanced out, so anyone using Advanced opened
+    the menu and found two modes with neither of them checked. All three are listed, what
+    Advanced is pinned to is spelled out, and the lines are names rather than paragraphs.
+</p>
+<p>
+    The progress line was a snapshot taken the instant the menu opened, so on a single file it
+    sat reading &ldquo;0 of 1&rdquo; until you closed it &mdash; a number that never moves looks
+    like an app that has hung. It counts while you watch it now.
+</p>
+
+<h3>Faster on every Mac, and gentler on small ones</h3>
+<p>
+    Lossless WebP was spending up to 46 seconds on a large screenshot to save a percentage it
+    couldn't predict &mdash; and on one image the slow setting produced a <em>larger</em> file
+    than the quick one. The effort is spent where it is cheap now.
+</p>
+<p>
+    How many files Ferry works on at once follows the machine rather than a core count. Apple
+    silicon reports every core, but half of them are efficiency cores, and handing each one a
+    full image pipeline makes a batch slower rather than faster. Memory counts too: a MacBook
+    Air with 8&nbsp;GB now runs three at a time where it used to attempt six.
+</p>
+
+<h3>Smaller things</h3>
+<p>
+    On the result screen, the second button beside an image reveals that one file in the Finder
+    rather than opening the preview a click on the image already opens. Sizes are drawn on the
+    image itself instead of appearing under the pointer. And the backdrop is one clean gradient.
+</p>
+]]></description>
+            <enclosure url="https://github.com/ZigaoWang/ferry-releases/releases/download/v2.1.0/Ferry-2.1.0.zip" length="4358694" type="application/octet-stream" sparkle:edSignature="b25gmZOJ8IHSkCAWc0wIUMMYz2TOejPgua/B16EwUlOF7HNUB5C5Strbl/ID/ypEXEhIZiE9X9uLFxfm+qBxBg=="/>
+        </item>
+        <item>
             <title>2.0.0</title>
             <pubDate>Thu, 13 Aug 2026 18:36:03 +0800</pubDate>
             <sparkle:version>6</sparkle:version>
@@ -116,14 +182,6 @@
 </p>
 ]]></description>
             <enclosure url="https://github.com/ZigaoWang/ferry-releases/releases/download/v1.1.0/Ferry-1.1.0.zip" length="3659240" type="application/octet-stream" sparkle:edSignature="3FZ7rpi5E3j7shsnql0dVVkG3Cf9/23fIWOCL2TrzE05YxSmi7oAVozDcgjOPNuRth9hnU6XeQI3AV/q1sK1CQ=="/>
-        </item>
-        <item>
-            <title>1.0.3</title>
-            <pubDate>Thu, 13 Aug 2026 09:45:21 +0800</pubDate>
-            <sparkle:version>4</sparkle:version>
-            <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/ZigaoWang/ferry-releases/releases/download/v1.0.3/Ferry-1.0.3.zip" length="3652778" type="application/octet-stream" sparkle:edSignature="eqSWwGas1zzcdq+iPuqf6wiuTG0teN/oBarmzR8276tGpg3GvGn23Usk36IfTD7okkM6U4g8wBBFLAsVa4mjDQ=="/>
         </item>
     </channel>
 </rss>
