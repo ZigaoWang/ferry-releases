@@ -3,6 +3,36 @@
     <channel>
         <title>Ferry</title>
         <item>
+            <title>2.1.1</title>
+            <pubDate>Sat, 15 Aug 2026 23:00:13 +0800</pubDate>
+            <sparkle:version>8</sparkle:version>
+            <sparkle:shortVersionString>2.1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h3>The screen no longer jumps when you choose Advanced</h3>
+<p>
+    Choosing Advanced added a row of pop-ups and pushed everything above it upward &mdash; the
+    boat, the heading, and the toggle you had just clicked. A control shouldn't slide out from
+    under the pointer that clicked it. The space is there either way now, so only the row
+    itself appears.
+</p>
+
+<h3>Advanced is a symbol on the end</h3>
+<p>
+    It had a third of the toggle and a word of its own, which advertised it as a third of the
+    decision. Smallest and Anywhere are the question everyone answers; Advanced is a way out for
+    the few whose pipeline already answered it. Hovering it still names it.
+</p>
+
+<h3>The selected mode is readable in dark mode</h3>
+<p>
+    Its label was white on a pale cyan, which measured 1.97:1 against the 4.5:1 that text this
+    size wants &mdash; something you had to go looking for rather than read. It's dark ink on
+    the accent now: 8.8:1 in dark, 6.2:1 in light.
+</p>
+]]></description>
+            <enclosure url="https://github.com/ZigaoWang/ferry-releases/releases/download/v2.1.1/Ferry-2.1.1.zip" length="4362296" type="application/octet-stream" sparkle:edSignature="By4MvH9UL8B4dKb3S9AzVkGF4wmoZvG7e8GRvXx5mC8LtThAuZPScvoAIqsoenHo/CPYnGO0WOsFKI5TwnS6DA=="/>
+        </item>
+        <item>
             <title>2.1.0</title>
             <pubDate>Fri, 14 Aug 2026 21:58:06 +0800</pubDate>
             <sparkle:version>7</sparkle:version>
@@ -130,58 +160,6 @@
 </p>
 ]]></description>
             <enclosure url="https://github.com/ZigaoWang/ferry-releases/releases/download/v2.0.0/Ferry-2.0.0.zip" length="4337593" type="application/octet-stream" sparkle:edSignature="MScRGzeKatdw/DgR6HTSeqtYc6jZS3qP+XKuQXDEm9Mahc+iW63rFmuoYw1hSG/Kn5FhADKo+DK9388BuzWDAA=="/>
-        </item>
-        <item>
-            <title>1.1.0</title>
-            <pubDate>Thu, 13 Aug 2026 11:04:36 +0800</pubDate>
-            <sparkle:version>5</sparkle:version>
-            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Photos keep their own colour</h3>
-<p>
-    Ferry used to fold an iPhone's HDR gain map back into the picture on the way out. On
-    two thirds of photos that visibly changed the exposure — most often brighter, so faces
-    washed out and lost detail — to reclaim a sliver of clipped highlight. Ferry now hands
-    back the exposure the shot was metered for, the same rendition Photos exports.
-</p>
-<p>
-    The old behaviour is still there if you want it, and it now has a switch:
-    <strong>Settings → HDR photos → Recover clipped highlights</strong>.
-</p>
-
-<h3>Photographs are checked before they're saved</h3>
-<p>
-    Ferry has always measured its work on screenshots and logos, encoding a few versions and
-    keeping the one that still looks right. Photographs skipped that check — they were saved
-    at a fixed setting, sight unseen, and on more than half of them that setting was past the
-    point Ferry would have accepted anywhere else. That's what made detail go soft and mushy.
-</p>
-<p>
-    Photographs now go through the same check as everything else. If the first attempt gives
-    up too much, Ferry spends the bytes and tries again. Most photos are unaffected; the ones
-    that were being quietly ruined come out visibly better, and a little larger.
-</p>
-
-<h3>You can keep every pixel</h3>
-<p>
-    The resize setting only ever made images smaller, so on a photograph — already brought
-    down to 2000px for the web — every size it offered did nothing at all. It now sets the
-    size, in both directions, and there's an <strong>Original size</strong> option for keeping
-    the full resolution.
-</p>
-<p>
-    Left alone, Ferry still brings photographs down to 2000px. That's where most of the saving
-    comes from. <em>If you had already picked a size in Settings, it now does what it says —
-    which may mean larger files than you were getting.</em>
-</p>
-
-<h3>Smaller files</h3>
-<p>
-    Every AVIF Ferry wrote claimed to have transparency, even a photograph that plainly
-    doesn't, and paid about 1% of its size to say so. Fixed.
-</p>
-]]></description>
-            <enclosure url="https://github.com/ZigaoWang/ferry-releases/releases/download/v1.1.0/Ferry-1.1.0.zip" length="3659240" type="application/octet-stream" sparkle:edSignature="3FZ7rpi5E3j7shsnql0dVVkG3Cf9/23fIWOCL2TrzE05YxSmi7oAVozDcgjOPNuRth9hnU6XeQI3AV/q1sK1CQ=="/>
         </item>
     </channel>
 </rss>
