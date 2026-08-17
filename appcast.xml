@@ -3,6 +3,24 @@
     <channel>
         <title>Ferry</title>
         <item>
+            <title>2.1.2</title>
+            <pubDate>Mon, 17 Aug 2026 22:50:57 +0800</pubDate>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>2.1.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h3>A few patches</h3>
+<p>
+    Removing your license now takes you straight back to the license screen. It used to leave
+    Ferry on screen refusing every drop, which looked like a broken app rather than an
+    unlicensed one.
+</p>
+<p>
+    Entering a key again starts you at the drop screen instead of the last batch you converted.
+</p>
+]]></description>
+            <enclosure url="https://github.com/ZigaoWang/ferry-releases/releases/download/v2.1.2/Ferry-2.1.2.zip" length="4364198" type="application/octet-stream" sparkle:edSignature="Z80QqCMAJvp101cHgL9XC1/TZyew2UPoDdxe8WxY/nhoVBTJwUXD5Bbd1T59YW2PbcAxIKM8wP+CPAoGegyvCA=="/>
+        </item>
+        <item>
             <title>2.1.1</title>
             <pubDate>Sat, 15 Aug 2026 23:00:13 +0800</pubDate>
             <sparkle:version>8</sparkle:version>
@@ -97,69 +115,6 @@
 </p>
 ]]></description>
             <enclosure url="https://github.com/ZigaoWang/ferry-releases/releases/download/v2.1.0/Ferry-2.1.0.zip" length="4358694" type="application/octet-stream" sparkle:edSignature="b25gmZOJ8IHSkCAWc0wIUMMYz2TOejPgua/B16EwUlOF7HNUB5C5Strbl/ID/ypEXEhIZiE9X9uLFxfm+qBxBg=="/>
-        </item>
-        <item>
-            <title>2.0.0</title>
-            <pubDate>Thu, 13 Aug 2026 18:36:03 +0800</pubDate>
-            <sparkle:version>6</sparkle:version>
-            <sparkle:shortVersionString>2.0.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>It compresses the files it used to give up on</h3>
-<p>
-    Ferry could only ever offer a file it had made itself — decode, re-encode, and if that
-    came out bigger than what you dropped in, hand back your original and call it already
-    good. It never asked the cheaper question: is this file carrying weight that isn't
-    picture? Usually it is.
-</p>
-<p>
-    It now optimizes the file you gave it as well, losslessly, and weighs that against
-    everything else. Screenshots that used to produce nothing now save 30&ndash;90%.
-</p>
-
-<h3>Two new formats, chosen per image</h3>
-<p>
-    Ferry writes AVIF, WebP, JPEG and PNG, and picks by writing the candidates and measuring
-    them rather than by guessing from the file type. WebP fills the gap that used to trap
-    screenshots between a lossy codec that smeared the text and a PNG several megabytes wide:
-    one 9&nbsp;MB screenshot that came out at 6&nbsp;MB now leaves at 106&nbsp;kB.
-</p>
-<p>
-    JPEG picked up mozjpeg's optimizer, which rebuilds the coding tables for each image and
-    writes progressively. About 9% smaller, with the decoded pixels identical.
-</p>
-
-<h3>Quality is measured, not set</h3>
-<p>
-    A quality number can't know how hard a picture is to encode, so it overshoots badly on
-    anything easy. Ferry now searches for the smallest encode that still clears its own
-    fidelity bar, per image. On a document scan that meant 38% smaller with the text
-    indistinguishable side by side.
-</p>
-<p>
-    Across a corpus of photographs: <strong>88% average saving</strong> on Smallest, 78% on
-    Works everywhere, and nothing refused on either.
-</p>
-
-<h3>Advanced, for when you know what you need</h3>
-<p>
-    A third mode beside Smallest and Anywhere. Pin the format, or lossy against lossless, or
-    both — useful when a pipeline or a client will only take one thing. Everything left on
-    Auto is still decided by measuring; pinning narrows what Ferry may write, it doesn't
-    switch the judgement off. When a pin forces something softer than Ferry would have picked,
-    it says so.
-</p>
-
-<h3>Smaller things</h3>
-<p>
-    Photographs shot on a phone are no longer misread as graphics, which used to leave a 24MP
-    photo re-encoded at full size and beaten by its own original. The result screen leads with
-    what happened rather than with a size increase when a conversion grew. Files that came out
-    of a camera now say when their colors were converted to sRGB. The menu bar no longer
-    spells out "Compressing" beside the boat. And an unlicensed copy no longer shows a blue
-    verified badge next to the words "Not licensed".
-</p>
-]]></description>
-            <enclosure url="https://github.com/ZigaoWang/ferry-releases/releases/download/v2.0.0/Ferry-2.0.0.zip" length="4337593" type="application/octet-stream" sparkle:edSignature="MScRGzeKatdw/DgR6HTSeqtYc6jZS3qP+XKuQXDEm9Mahc+iW63rFmuoYw1hSG/Kn5FhADKo+DK9388BuzWDAA=="/>
         </item>
     </channel>
 </rss>
